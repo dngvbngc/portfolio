@@ -9,15 +9,7 @@ import {
   Text,
   Image,
 } from "@chakra-ui/react";
-
-interface Project {
-  name: string;
-  description: string;
-  image: string;
-  stack: string[];
-  github: string;
-  live: string;
-}
+import { Project } from "../entities/Project";
 
 interface Props {
   project: Project;
@@ -33,13 +25,19 @@ const ProjectCard = ({ project }: Props) => {
       borderRadius={10}
       overflow='hidden'
     >
-      <Card variant='outline' bg='rgba(255, 255, 255, 0.8)' borderRadius='20px'>
+      <Card
+        variant='outline'
+        bg='rgba(255, 255, 255, 0.8)'
+        borderRadius='20px'
+        direction={{ base: "column", md: "row" }}
+      >
         <Link href={project.live}>
           <Image
             src={`projects/${project.image}`}
-            width='100%'
+            width={{ base: "100%", md: "350px", lg: "50vw" }}
+            height={{ md: "200px", lg: "27vw" }}
             objectFit='cover'
-            borderRadius='20px 20px 0 0'
+            borderRadius={{ base: "20px 20px 0 0", md: "20px 0 0 20px" }}
           />
         </Link>
         <CardBody>
@@ -47,38 +45,42 @@ const ProjectCard = ({ project }: Props) => {
             fontSize='2xl'
             marginBottom={2}
             textAlign='left'
-            color='#297dda'
+            color='brand.200'
           >
             <Link href={project.live}>{project.name}</Link>
           </Heading>
           <Text as='i' color='black' alignSelf='center'>
             {project.description}
           </Text>
-          <HStack justifyContent='flex-end' paddingTop={5}>
+          <HStack
+            justifyContent={{ base: "flex-end", lg: "flex-start" }}
+            paddingTop={5}
+          >
             {project.stack.map((s) => (
               <Badge
+                key={s}
                 bg='cornflowerblue'
-                colorScheme='black'
+                color='white'
                 variant='subtle'
-                fontSize='14px'
                 paddingX={2}
                 paddingY={1}
                 borderRadius='4px'
+                fontSize={{ base: "medium", md: "small", lg: "medium" }}
               >
                 <Text>{s}</Text>
               </Badge>
             ))}
             <Link href={project.github}>
               <Badge
-                bg='#C3B1E1'
-                colorScheme='black'
+                bg='brand.900'
+                color='white'
                 variant='subtle'
                 fontSize='14px'
                 paddingX={2}
                 paddingY={1}
                 borderRadius='4px'
               >
-                <Text>Github</Text>
+                <Text>Code</Text>
               </Badge>
             </Link>
           </HStack>
