@@ -1,60 +1,84 @@
-import { Center, Grid, GridItem, Image, Text } from "@chakra-ui/react";
-import background from "../assets/background.png";
+import {
+  Badge,
+  Box,
+  Center,
+  Image,
+  SimpleGrid,
+  Stack,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import profile from "../assets/profile.jpg";
 import name from "../assets/name.svg";
+import background from "../assets/background.png";
 
 const Introduction = () => {
   return (
-    <Center
-      height='93vh'
-      style={{
-        backgroundImage: `url(${background})`,
-        backgroundColor: "rgba(209, 194, 217, 0.5)",
-        backgroundBlendMode: "lighten",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <Grid
-        templateAreas={{
-          base: `"photo" "name"`,
-          lg: `"photo name"`,
+    <Box>
+      <SimpleGrid
+        height='93vh'
+        style={{
+          backgroundImage: `url(${background})`,
+          backgroundRepeat: "no-repeat",
         }}
-        templateColumns={{
-          base: "1fr",
-          lg: "40vw 45vw",
-        }}
+        columns={{ base: 1, lg: 2 }}
+        paddingX={{ base: 5, lg: 20 }}
       >
-        <GridItem area='photo'>
+        <Center display={{ base: "none", lg: "flex" }}>
           <Image
-            padding={{ base: 30, md: 100, lg: "" }}
-            marginTop={{ base: -20, lg: -20 }}
-            borderRadius='full'
+            marginTop={-20}
+            padding={{ base: 0, lg: 100 }}
             src={profile}
+            borderRadius='full'
             alt='Profile Photo'
           />
-        </GridItem>
-        <GridItem area='name' marginX={{ base: 10, lg: "" }}>
-          <Image
-            marginTop={{ base: -5, lg: 0 }}
-            paddingTop={{ base: 0, lg: 20 }}
-            src={name}
-          />
-          <Text
-            as='h2'
-            color='brand.900'
-            fontSize={{ base: 15, lg: 20 }}
-            fontWeight='bold'
-            marginTop={{ base: -4, lg: -5 }}
-            textAlign='center'
-          >
-            <center>
-              Final year Computer Science student at Yale-NUS College. Check out
-              my side quests below!
-            </center>
-          </Text>
-        </GridItem>
-      </Grid>
-    </Center>
+        </Center>
+        <Center>
+          <VStack paddingRight={{ base: 0, lg: 100 }}>
+            <Image src={name} alt='Ari Dang' marginTop={-20} />
+            <Stack
+              direction={{ base: "column", lg: "row" }}
+              spacing={5}
+              textAlign='center'
+            >
+              <Badge
+                bg={{ base: "brand.900", lg: "cornflowerblue" }}
+                color='white'
+                variant='subtle'
+                fontSize='15px'
+                paddingX={2}
+                paddingY={1}
+                borderRadius='4px'
+              >
+                <Text>Computer Science</Text>
+              </Badge>
+              <Badge
+                bg={{ base: "brand.900", lg: "cornflowerblue" }}
+                color='white'
+                variant='subtle'
+                fontSize='15px'
+                paddingX={2}
+                paddingY={1}
+                borderRadius='4px'
+              >
+                <Text>Yale-NUS College</Text>
+              </Badge>
+              <Badge
+                bg={{ base: "brand.900", lg: "cornflowerblue" }}
+                color='white'
+                variant='subtle'
+                fontSize='15px'
+                paddingX={2}
+                paddingY={1}
+                borderRadius='4px'
+              >
+                <Text>Singapore & Saigon</Text>
+              </Badge>
+            </Stack>
+          </VStack>
+        </Center>
+      </SimpleGrid>
+    </Box>
   );
 };
 

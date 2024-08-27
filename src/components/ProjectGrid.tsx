@@ -9,13 +9,12 @@ interface Props {
 const ProjectGrid = ({ projects }: Props) => {
   return (
     <SimpleGrid
-      paddingX={{ base: 5, md: 20 }}
-      paddingY={10}
-      columns={{ base: 1, md: 1 }}
+      paddingX={{ base: 10, md: 20 }}
+      paddingY={20}
       spacing={{ base: 5, lg: 10 }}
     >
       {projects.map((p) => (
-        <Box key={p.name}>
+        <Box key={p.name} marginTop={50}>
           <ProjectCard project={p} />
         </Box>
       ))}

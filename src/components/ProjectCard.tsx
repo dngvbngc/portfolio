@@ -41,15 +41,10 @@ const ProjectCard = ({ project }: Props) => {
           />
         </Link>
         <CardBody>
-          <Heading
-            fontSize='2xl'
-            marginBottom={2}
-            textAlign='left'
-            color='brand.200'
-          >
+          <Heading fontSize='2xl' marginBottom={2} color='brand.200'>
             <Link href={project.live}>{project.name}</Link>
           </Heading>
-          <Text as='i' color='black' alignSelf='center'>
+          <Text as='i' color='black'>
             {project.description}
           </Text>
           <HStack
