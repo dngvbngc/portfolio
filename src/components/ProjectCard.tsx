@@ -59,10 +59,10 @@ const ProjectCard = ({ project }: Props) => {
                 bg='brand.500'
                 color='white'
                 variant='subtle'
-                fontSize='14px'
                 paddingX={2}
                 paddingY={1}
                 borderRadius='4px'
+                fontSize={{ base: "medium", md: "small", lg: "medium" }}
               >
                 <Text>Code</Text>
               </Badge>
