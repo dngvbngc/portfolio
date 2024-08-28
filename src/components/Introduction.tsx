@@ -12,7 +12,12 @@ import profile from "../assets/profile.jpg";
 const Introduction = () => {
   return (
     <Box>
-      <SimpleGrid height='93vh' color='brand.400' columns={{ base: 1, lg: 2 }}>
+      <SimpleGrid
+        backgroundColor='white'
+        height='93vh'
+        color='brand.400'
+        columns={{ base: 1, lg: 2 }}
+      >
         <Center
           paddingLeft={{ base: 0, lg: 150 }}
           display={{ base: "none", lg: "flex" }}
@@ -36,8 +41,7 @@ const Introduction = () => {
             <Text fontSize={70} color='brand.500'>
               Ari Dang
             </Text>{" "}
-            and i'm a final year computer science student at yale-nus college,
-            singapore.
+            final year computer science student at yale-nus college, singapore.
           </Heading>
         </Center>
       </SimpleGrid>
