@@ -7,7 +7,7 @@ interface Props {
 const HeadingTile = ({ text }: Props) => {
   return (
     <Center padding={10} backgroundColor='brand.500'>
-      <Heading letterSpacing={2} color='white'>
+      <Heading letterSpacing={1} color='white'>
         {text}
       </Heading>
     </Center>

@@ -26,7 +26,12 @@ const Introduction = () => {
           />
         </Center>
         <Center padding={{ base: 10, lg: 0 }} paddingRight={{ lg: 150 }}>
-          <Heading marginTop={-20} width={500} fontSize={40} fontWeight='thin'>
+          <Heading
+            marginTop={-20}
+            width={500}
+            fontSize={{ base: 20, lg: 40 }}
+            fontWeight='thin'
+          >
             hi, i am...{" "}
             <Text fontSize={70} color='brand.500'>
               Ari Dang
