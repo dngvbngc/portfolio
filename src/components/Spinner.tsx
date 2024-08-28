@@ -16,7 +16,7 @@ const Spinner = ({ id, position }: Props) => {
       src={favicon}
       boxSize='6vw'
       position='absolute'
-      top={position === "top" ? "18vh" : "82vh"}
+      top={position === "top" ? "18vh" : `76vh`}
       right={
         intId <= 4 ? `${(intId - 1) * 6 + 10}vw` : `${(intId - 5) * 6 + 10}vw`
       }
