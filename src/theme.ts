@@ -1,4 +1,5 @@
 import { extendTheme, type ThemeConfig } from "@chakra-ui/react";
+import "@fontsource/dm-serif-text";
 
 const config: ThemeConfig = {
   initialColorMode: "light",
@@ -7,13 +8,16 @@ const config: ThemeConfig = {
 
 const theme = extendTheme({
   config,
+  fonts: {
+    heading: `'DM Serif Text', sans-serif`,
+  },
   colors: {
     brand: {
-      100: "#eeb1b1",
-      200: "#297dda",
-      300: "#d1c2d9",
-      500: "#ed77c1",
-      900: "#515389",
+      100: "#C8C6C2",
+      200: "#967261",
+      300: "#68869a",
+      400: "#735957",
+      500: "#2E2831",
     },
   },
 });

@@ -16,20 +16,12 @@ export default [
     live: "https://youtu.be/vGnhL5ZqGqs?si=nHCIbuJYsFRxl-7r",
   },
   {
-    name: "Eyes 4 Numbers",
+    name: "Eyes4Numbers",
     image: "eyes4numbers.png",
     description: "Relaxing number-finding game for killing time",
     stack: ["Flask", "Postgres"],
     github: "https://github.com/dngvbngc/eyes4numbers",
     live: "https://eyes4numbers.vercel.app/",
-  },
-  {
-    name: "Memory Tic-Tac-Toe",
-    image: "tic.png",
-    description: "Tic-Tac-Toe without markers",
-    stack: ["HTML", "CSS", "JS"],
-    github: "https://github.com/dngvbngc/memory-tic-tac-toe",
-    live: "https://memory-tic-tac-8c335bhpv-ari-dang-personal.vercel.app/",
   },
   {
     name: "Browser Pet",
@@ -38,5 +30,13 @@ export default [
     stack: ["Chrome Extension"],
     github: "https://github.com/dngvbngc/browser-pet",
     live: "https://github.com/dngvbngc/browser-pet",
+  },
+  {
+    name: "Memory Tic-Tac-Toe",
+    image: "tic.png",
+    description: "Tic-Tac-Toe without markers",
+    stack: ["HTML", "CSS", "JS"],
+    github: "https://github.com/dngvbngc/memory-tic-tac-toe",
+    live: "https://memory-tic-tac-8c335bhpv-ari-dang-personal.vercel.app/",
   },
 ];
