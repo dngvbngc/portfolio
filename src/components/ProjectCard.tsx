@@ -24,7 +24,7 @@ const ProjectCard = ({ project }: Props) => {
       }}
       overflow='hidden'
     >
-      <Card variant='outline' bg='rgba(255, 255, 255, 0.8)' borderRadius={0}>
+      <Card variant='outline' bg='rgba(255, 255, 255, 0.6)' borderRadius={0}>
         <Link href={project.live}>
           <Image
             padding={1}

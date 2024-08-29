@@ -29,7 +29,7 @@ export default [
     description: "An on-screen reminder to take a break every 30 minutes",
     stack: ["Chrome Extension"],
     github: "https://github.com/dngvbngc/browser-pet",
-    live: "https://github.com/dngvbngc/browser-pet",
+    live: "https://chromewebstore.google.com/detail/browser-pet-pomodoro-remi/fjjmcloeojbhponobhahhabobdpclpgo?authuser=0&hl=en",
   },
   {
     name: "Memory Tic-Tac-Toe",

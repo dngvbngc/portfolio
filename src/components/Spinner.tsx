@@ -12,7 +12,7 @@ const Spinner = ({ id, position }: Props) => {
     <Image
       className='spinner'
       id={`spinner${id}`}
-      display='block'
+      display={{ base: "none", lg: "block" }}
       src={favicon}
       boxSize='6vw'
       position='absolute'
