@@ -22,7 +22,7 @@ const Introduction = () => {
             alt='Profile Photo'
           />
         </Center>
-        <Center display={{ base: "none", lg: "flex" }} paddingRight={100}>
+        <Center display={{ base: "none", lg: "flex" }} marginLeft='-20vw'>
           <Heading marginTop={-20} width={500} fontSize={40} fontWeight='thin'>
             hi, i am...{" "}
             <Text fontSize={70} color='brand.500'>
