@@ -10,7 +10,7 @@ function App() {
     <>
       <SocialBar />
       <Introduction />
-      <HeadingTile text='selected work' />
+      <HeadingTile text='Personal Projects' />
       <ProjectGrid projects={projects} />
       <Spinner id='1' position='top' />
       <Spinner id='2' position='top' />

@@ -1,4 +1,4 @@
-import { Heading, HStack, Link } from "@chakra-ui/react";
+import { HStack, Image, Link } from "@chakra-ui/react";
 import socials from "../data/socials";
 
 const SocialBar = () => {
@@ -11,9 +11,7 @@ const SocialBar = () => {
     >
       {socials.map((s) => (
         <Link key={s.name} href={s.link}>
-          <Heading color='white' fontSize={20}>
-            {s.name.toLowerCase()}
-          </Heading>
+          <Image src={`socials/${s.icon}`} boxSize={8} />
         </Link>
       ))}
     </HStack>
