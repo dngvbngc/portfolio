@@ -23,12 +23,16 @@ const Introduction = () => {
           />
         </Center>
         <Center display={{ base: "none", lg: "flex" }} marginLeft='-20vw'>
-          <Heading marginTop={-20} width={500} fontSize={40} fontWeight='thin'>
+          <Heading marginTop={-20} width={500} fontSize={25} fontWeight='thin'>
             hi, i am...{" "}
-            <Text fontSize={70} color='brand.500'>
+            <Text fontSize={80} color='brand.500'>
               Ari Dang
             </Text>{" "}
-            final year computer science student at yale-nus college, singapore.
+            &#x2615; computer science
+            <br></br>
+            &#9728; yale-nus, singapore
+            <br></br>
+            &hearts; web development
           </Heading>
         </Center>
         {/* For small to medium screens */}
@@ -55,7 +59,11 @@ const Introduction = () => {
             <Text fontSize={{ base: 50, sm: 70 }} color='brand.500'>
               Ari Dang
             </Text>{" "}
-            final year computer science student at yale-nus college, singapore.
+            &#x2615; computer science
+            <br></br>
+            &#9728; yale-nus, singapore
+            <br></br>
+            &hearts; web development
           </Heading>
         </Box>
       </SimpleGrid>
