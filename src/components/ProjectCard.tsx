@@ -1,15 +1,14 @@
 import {
-  Badge,
   Box,
   Card,
   CardBody,
   Heading,
-  HStack,
   Link,
   Text,
   Image,
 } from "@chakra-ui/react";
 import { Project } from "../entities/Project";
+import BadgeStack from "./BadgeStack";
 
 interface Props {
   project: Project;
@@ -39,35 +38,7 @@ const ProjectCard = ({ project }: Props) => {
           <Text as='i' color='black'>
             {project.description}
           </Text>
-          <HStack justifyContent='flex-end' paddingTop={5}>
-            {project.stack.map((s) => (
-              <Badge
-                key={s}
-                bg='brand.400'
-                color='white'
-                variant='subtle'
-                paddingX={2}
-                paddingY={1}
-                borderRadius='4px'
-                fontSize={{ base: "medium", md: "small", lg: "medium" }}
-              >
-                <Text>{s}</Text>
-              </Badge>
-            ))}
-            <Link href={project.github}>
-              <Badge
-                bg='brand.500'
-                color='white'
-                variant='subtle'
-                paddingX={2}
-                paddingY={1}
-                borderRadius='4px'
-                fontSize={{ base: "medium", md: "small", lg: "medium" }}
-              >
-                <Text>Code</Text>
-              </Badge>
-            </Link>
-          </HStack>
+          <BadgeStack stack={project.stack} github={project.github} />
         </CardBody>
       </Card>
     </Box>

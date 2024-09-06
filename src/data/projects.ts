@@ -3,7 +3,7 @@ export default [
     name: "Signopsys",
     image: "signopsys.png",
     description: "Interactive online platform for learning Sign Language",
-    stack: ["React", "Chakra UI"],
+    stack: ["React", "Flask", "OpenCV", "SKLearn"],
     github: "https://github.com/dngvbngc/learn-sign-language",
     live: "https://learn-sign-language.vercel.app/",
   },
