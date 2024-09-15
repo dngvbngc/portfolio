@@ -1,5 +1,14 @@
 export default [
   {
+    name: "Memory Toast",
+    image: "memory-toast.png",
+    description:
+      "Note-taking application based on Doraemon's Memory Toast gadget",
+    stack: ["NextJS", "React", "PostgreSQL"],
+    github: "https://github.com/dngvbngc/doraemon-memory-toast",
+    live: "https://doraemon-memory-toast.vercel.app/",
+  },
+  {
     name: "Signopsys",
     image: "signopsys.png",
     description: "Interactive online platform for learning Sign Language",
@@ -19,7 +28,7 @@ export default [
     name: "Eyes4Numbers",
     image: "eyes4numbers.png",
     description: "Relaxing number-finding game for killing time",
-    stack: ["Flask", "Postgres"],
+    stack: ["Flask", "PostgreSQL"],
     github: "https://github.com/dngvbngc/eyes4numbers",
     live: "https://eyes4numbers.vercel.app/",
   },
