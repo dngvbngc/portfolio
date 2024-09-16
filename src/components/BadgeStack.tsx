@@ -17,7 +17,7 @@ const RegularStack = ({ stack, github }: Props) => {
           paddingX={2}
           paddingY={1}
           borderRadius='4px'
-          fontSize={{ base: "medium", md: "small", lg: "medium" }}
+          fontSize={{ base: "small", lg: "medium" }}
         >
           <Text>{s}</Text>
         </Badge>
@@ -30,7 +30,7 @@ const RegularStack = ({ stack, github }: Props) => {
           paddingX={2}
           paddingY={1}
           borderRadius='4px'
-          fontSize={{ base: "medium", md: "small", lg: "medium" }}
+          fontSize={{ base: "small", lg: "medium" }}
         >
           <Text>Code</Text>
         </Badge>
@@ -40,7 +40,9 @@ const RegularStack = ({ stack, github }: Props) => {
 };
 
 const DynamicStack = ({ stack, github }: Props) => {
-  if (stack.length <= 3) return <RegularStack stack={stack} github={github} />;
+  const length = stack.join("").length;
+  if (length < 15 || stack.length <= 2)
+    return <RegularStack stack={stack} github={github} />;
 
   return (
     <Stack>
@@ -54,7 +56,7 @@ const DynamicStack = ({ stack, github }: Props) => {
             paddingX={2}
             paddingY={1}
             borderRadius='4px'
-            fontSize={{ base: "medium", md: "small", lg: "medium" }}
+            fontSize={{ base: "small", lg: "medium" }}
           >
             <Text>{s}</Text>
           </Badge>
@@ -70,7 +72,7 @@ const DynamicStack = ({ stack, github }: Props) => {
             paddingX={2}
             paddingY={1}
             borderRadius='4px'
-            fontSize={{ base: "medium", md: "small", lg: "medium" }}
+            fontSize={{ base: "small", lg: "medium" }}
           >
             <Text>{s}</Text>
           </Badge>
@@ -83,7 +85,7 @@ const DynamicStack = ({ stack, github }: Props) => {
             paddingX={2}
             paddingY={1}
             borderRadius='4px'
-            fontSize={{ base: "medium", md: "small", lg: "medium" }}
+            fontSize={{ base: "small", lg: "medium" }}
           >
             <Text>Code</Text>
           </Badge>
@@ -96,10 +98,10 @@ const DynamicStack = ({ stack, github }: Props) => {
 export const BadgeStack = ({ stack, github }: Props) => {
   return (
     <>
-      <Box display={{ base: "none", lg: "block" }}>
+      <Box display={{ base: "none", xl: "block" }}>
         <RegularStack stack={stack} github={github} />
       </Box>
-      <Box display={{ base: "block", lg: "none" }}>
+      <Box display={{ base: "block", xl: "none" }}>
         <DynamicStack stack={stack} github={github} />
       </Box>
     </>
