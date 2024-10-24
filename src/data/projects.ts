@@ -9,20 +9,20 @@ export default [
     live: "https://doraemon-memory-toast.vercel.app/",
   },
   {
-    name: "Signopsys",
-    image: "signopsys.png",
-    description: "Interactive online platform for learning Sign Language",
-    stack: ["React", "Flask", "OpenCV", "SKLearn"],
-    github: "https://github.com/dngvbngc/learn-sign-language",
-    live: "https://learn-sign-language.vercel.app/",
-  },
-  {
     name: "FlashCards",
     image: "flashcards.png",
     description: "Full-stack web application for studying & memorization",
     stack: ["Django", "SQLite"],
     github: "https://github.com/dngvbngc/FlashCards",
     live: "https://youtu.be/vGnhL5ZqGqs?si=nHCIbuJYsFRxl-7r",
+  },
+  {
+    name: "Signopsys",
+    image: "signopsys.png",
+    description: "Interactive online platform for learning Sign Language",
+    stack: ["React"],
+    github: "https://github.com/dngvbngc/learn-sign-language",
+    live: "https://learn-sign-language.vercel.app/",
   },
   {
     name: "Eyes4Numbers",
@@ -39,13 +39,5 @@ export default [
     stack: ["Chrome Extension"],
     github: "https://github.com/dngvbngc/browser-pet",
     live: "https://chromewebstore.google.com/detail/browser-pet-pomodoro-remi/fjjmcloeojbhponobhahhabobdpclpgo?authuser=0&hl=en",
-  },
-  {
-    name: "Memory Tic-Tac-Toe",
-    image: "tic.png",
-    description: "Tic-Tac-Toe without markers",
-    stack: ["HTML", "CSS", "JS"],
-    github: "https://github.com/dngvbngc/memory-tic-tac-toe",
-    live: "https://memory-tic-tac-8c335bhpv-ari-dang-personal.vercel.app/",
   },
 ];

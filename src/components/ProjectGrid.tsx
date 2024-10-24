@@ -12,7 +12,7 @@ const ProjectGrid = ({ projects }: Props) => {
       paddingX={{ base: 10, md: 20 }}
       paddingY={20}
       spacing={{ base: 5, lg: 10 }}
-      columns={{ base: 1, md: 2 }}
+      columns={{ base: 1, md: 2, lg: 3 }}
     >
       {projects.map((p) => (
         <Box key={p.name} marginTop={50}>

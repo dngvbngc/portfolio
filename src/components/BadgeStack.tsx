@@ -17,7 +17,7 @@ const RegularStack = ({ stack, github }: Props) => {
           paddingX={2}
           paddingY={1}
           borderRadius='4px'
-          fontSize={{ base: "small", lg: "medium" }}
+          fontSize='small'
         >
           <Text>{s}</Text>
         </Badge>
@@ -30,7 +30,7 @@ const RegularStack = ({ stack, github }: Props) => {
           paddingX={2}
           paddingY={1}
           borderRadius='4px'
-          fontSize={{ base: "small", lg: "medium" }}
+          fontSize='small'
         >
           <Text>Code</Text>
         </Badge>
@@ -47,7 +47,7 @@ const DynamicStack = ({ stack, github }: Props) => {
   return (
     <Stack>
       <HStack justifyContent='flex-end' paddingTop={5}>
-        {stack.slice(0, 3).map((s) => (
+        {stack.slice(0, 2).map((s) => (
           <Badge
             key={s}
             bg='brand.400'
@@ -56,14 +56,14 @@ const DynamicStack = ({ stack, github }: Props) => {
             paddingX={2}
             paddingY={1}
             borderRadius='4px'
-            fontSize={{ base: "small", lg: "medium" }}
+            fontSize='small'
           >
             <Text>{s}</Text>
           </Badge>
         ))}
       </HStack>
       <HStack justifyContent='flex-end'>
-        {stack.slice(3).map((s) => (
+        {stack.slice(2).map((s) => (
           <Badge
             key={s}
             bg='brand.400'
@@ -72,7 +72,7 @@ const DynamicStack = ({ stack, github }: Props) => {
             paddingX={2}
             paddingY={1}
             borderRadius='4px'
-            fontSize={{ base: "small", lg: "medium" }}
+            fontSize='small'
           >
             <Text>{s}</Text>
           </Badge>
@@ -85,7 +85,7 @@ const DynamicStack = ({ stack, github }: Props) => {
             paddingX={2}
             paddingY={1}
             borderRadius='4px'
-            fontSize={{ base: "small", lg: "medium" }}
+            fontSize='small'
           >
             <Text>Code</Text>
           </Badge>
