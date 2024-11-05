@@ -1,12 +1,15 @@
 import { Box, SimpleGrid } from "@chakra-ui/react";
 import { Project } from "../entities/Project";
+import { DesignProject } from "../entities/DesignProject";
 import ProjectCard from "./ProjectCard";
+import DesignProjectCard from "./DesignProjectCard";
 
 interface Props {
   projects: Project[];
+  designs: DesignProject[];
 }
 
-const ProjectGrid = ({ projects }: Props) => {
+const ProjectGrid = ({ projects, designs }: Props) => {
   return (
     <SimpleGrid
       paddingX={{ base: 10, md: 20 }}
@@ -17,6 +20,11 @@ const ProjectGrid = ({ projects }: Props) => {
       {projects.map((p) => (
         <Box key={p.name} marginTop={50}>
           <ProjectCard project={p} />
+        </Box>
+      ))}
+      {designs.map((p) => (
+        <Box key={p.name} marginTop={50}>
+          <DesignProjectCard project={p} />
         </Box>
       ))}
     </SimpleGrid>

@@ -1,4 +1,5 @@
 import projects from "./data/projects";
+import designs from "./data/designs";
 import ProjectGrid from "./components/ProjectGrid";
 import SocialBar from "./components/SocialBar";
 import Introduction from "./components/Introduction";
@@ -11,7 +12,7 @@ function App() {
       <SocialBar />
       <Introduction />
       <HeadingTile text='Personal Projects' />
-      <ProjectGrid projects={projects} />
+      <ProjectGrid projects={projects} designs={designs} />
       <Spinner id='1' position='top' />
       <Spinner id='2' position='top' />
       <Spinner id='3' position='top' />
