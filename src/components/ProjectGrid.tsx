@@ -17,14 +17,14 @@ const ProjectGrid = ({ projects, designs }: Props) => {
       spacing={{ base: 5, lg: 10 }}
       columns={{ base: 1, md: 2, lg: 3 }}
     >
-      {projects.map((p) => (
-        <Box key={p.name} marginTop={50}>
-          <ProjectCard project={p} />
-        </Box>
-      ))}
       {designs.map((p) => (
         <Box key={p.name} marginTop={50}>
           <DesignProjectCard project={p} />
+        </Box>
+      ))}
+      {projects.map((p) => (
+        <Box key={p.name} marginTop={50}>
+          <ProjectCard project={p} />
         </Box>
       ))}
     </SimpleGrid>
