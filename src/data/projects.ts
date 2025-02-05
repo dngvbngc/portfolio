@@ -21,8 +21,16 @@ export default [
     image: "signopsys.png",
     description: "Interactive online platform for learning Sign Language",
     stack: ["React"],
-    github: "https://github.com/dngvbngc/learn-sign-language",
+    github: "https://github.com/dngvbngc/sudoku-solver",
     live: "https://learn-sign-language.vercel.app/",
+  },
+  {
+    name: "Sudoku Solver",
+    image: "sudoku.png",
+    description: "Solve Sudoku puzzles with AI using backtracking algorithm",
+    stack: ["React"],
+    github: "https://github.com/dngvbngc/sudoku-solver",
+    live: "https://sudoku-solver-six-alpha.vercel.app/",
   },
   {
     name: "Eyes4Numbers",
