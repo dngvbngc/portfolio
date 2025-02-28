@@ -25,6 +25,15 @@ export default [
     live: "https://learn-sign-language.vercel.app/",
   },
   {
+    name: "Dance Video Effects",
+    image: "dance-effects.jpg",
+    description:
+      "Add-on chakra ball effects for dance videos using AI pose detection",
+    stack: ["MediaPipe", "OpenCV"],
+    github: "https://github.com/dngvbngc/ai-dance-video-effects",
+    live: "https://www.youtube.com/watch?v=33-irP4wQTc",
+  },
+  {
     name: "Sudoku Solver",
     image: "sudoku.png",
     description: "Solve Sudoku puzzles with AI using backtracking algorithm",
