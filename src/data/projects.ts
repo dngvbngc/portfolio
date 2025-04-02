@@ -2,8 +2,7 @@ export default [
   {
     name: "Memory Toast",
     image: "memory-toast.png",
-    description:
-      "Note-taking application based on Doraemon's Memory Toast gadget",
+    description: "Doraemon's Memory Toast gadget but online",
     stack: ["NextJS", "React", "PostgreSQL"],
     github: "https://github.com/dngvbngc/doraemon-memory-toast",
     live: "https://doraemon-memory-toast.vercel.app/",
@@ -11,7 +10,7 @@ export default [
   {
     name: "FlashCards",
     image: "flashcards.png",
-    description: "Full-stack web application for studying & memorization",
+    description: "Full-stack web app for memory-based learning",
     stack: ["Django", "SQLite"],
     github: "https://github.com/dngvbngc/FlashCards",
     live: "https://youtu.be/vGnhL5ZqGqs?si=nHCIbuJYsFRxl-7r",
@@ -19,24 +18,15 @@ export default [
   {
     name: "Signopsys",
     image: "signopsys.png",
-    description: "Interactive online platform for learning Sign Language",
+    description: "Interactive games for learning Sign Language",
     stack: ["React"],
     github: "https://github.com/dngvbngc/sudoku-solver",
     live: "https://learn-sign-language.vercel.app/",
   },
   {
-    name: "Dance Video Effects",
-    image: "dance-effects.jpg",
-    description:
-      "Add-on chakra ball effects for dance videos using AI pose detection",
-    stack: ["MediaPipe", "OpenCV"],
-    github: "https://github.com/dngvbngc/ai-dance-video-effects",
-    live: "https://www.youtube.com/watch?v=33-irP4wQTc",
-  },
-  {
     name: "Sudoku Solver",
     image: "sudoku.png",
-    description: "Solve Sudoku puzzles with AI using backtracking algorithm",
+    description: "Solve Sudoku with backtracking algorithm",
     stack: ["React"],
     github: "https://github.com/dngvbngc/sudoku-solver",
     live: "https://sudoku-solver-six-alpha.vercel.app/",
@@ -44,7 +34,7 @@ export default [
   {
     name: "Eyes4Numbers",
     image: "eyes4numbers.png",
-    description: "Relaxing number-finding game for killing time",
+    description: "Number-finding game for killing time",
     stack: ["Flask", "PostgreSQL"],
     github: "https://github.com/dngvbngc/eyes4numbers",
     live: "https://eyes4numbers.vercel.app/",
@@ -52,9 +42,27 @@ export default [
   {
     name: "Browser Pet",
     image: "browser-pet.jpg",
-    description: "An on-screen reminder to take a break every 30 minutes",
+    description: "An on-screen break time reminder",
     stack: ["Chrome Extension"],
     github: "https://github.com/dngvbngc/browser-pet",
     live: "https://chromewebstore.google.com/detail/browser-pet-pomodoro-remi/fjjmcloeojbhponobhahhabobdpclpgo?authuser=0&hl=en",
+  },
+  {
+    name: "Dance Video Effects",
+    image: "",
+    description:
+      "Add-on chakra ball effects for dance videos using pose detection",
+    stack: ["MediaPipe", "OpenCV"],
+    github: "https://github.com/dngvbngc/ai-dance-video-effects",
+    live: "https://www.youtube.com/watch?v=33-irP4wQTc",
+  },
+  {
+    name: "Price Predictor",
+    image: "",
+    description:
+      "Price predictor based on Refash's secondhand retail data & a case study of Refash's pricing",
+    stack: ["R"],
+    github: "https://github.com/dngvbngc/refash-price-predictor",
+    live: "https://github.com/dngvbngc/refash-price-predictor",
   },
 ];

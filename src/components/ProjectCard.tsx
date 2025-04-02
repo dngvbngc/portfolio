@@ -25,11 +25,15 @@ const ProjectCard = ({ project }: Props) => {
     >
       <Card variant='outline' bg='rgba(255, 255, 255, 0.6)' borderRadius={0}>
         <Link href={project.live}>
-          <Image
-            padding={1}
-            src={`projects/${project.image}`}
-            objectFit='cover'
-          />
+          {project.image && (
+            <Link href={project.live}>
+              <Image
+                padding={1}
+                src={`projects/${project.image}`}
+                objectFit='cover'
+              />
+            </Link>
+          )}
         </Link>
         <CardBody>
           <Heading fontSize='2xl' marginBottom={2} color='brand.500'>

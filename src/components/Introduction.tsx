@@ -26,7 +26,7 @@ const Introduction = () => {
           <Heading marginTop={-20} width={500} fontSize={25} fontWeight='thin'>
             hi, i am...{" "}
             <Text fontSize={80} color='brand.500'>
-              Ari Dang
+              Ari
             </Text>{" "}
             &#x2615; computer science
             <br></br>
