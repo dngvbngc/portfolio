@@ -1,8 +1,9 @@
 body {
-  background-color: blanchedalmond !important;
+  background-color: #f6edfa !important;
   height: 100%;
   padding: 0;
   margin: 0;
+  font-family: 'Merriweather Variable', serif;
 }
 
 /* Add this to your App.css or another CSS file */

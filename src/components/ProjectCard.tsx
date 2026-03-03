@@ -21,27 +21,29 @@ const ProjectCard = ({ project }: Props) => {
         transform: "scale(1.03)",
         transition: "transform .15s ease-in",
       }}
-      overflow='hidden'
+      overflow="hidden"
     >
-      <Card variant='outline' bg='rgba(255, 255, 255, 0.6)' borderRadius={0}>
+      <Card variant="outline" bg="rgba(255, 255, 255, 0.6)" borderRadius={10}>
         <Link href={project.live}>
-          {project.image && (
+          {project.image && project.live && (
             <Link href={project.live}>
               <Image
                 padding={1}
                 src={`projects/${project.image}`}
-                objectFit='cover'
+                objectFit="cover"
               />
             </Link>
           )}
         </Link>
         <CardBody>
-          <Heading fontSize='2xl' marginBottom={2} color='brand.500'>
-            <Link href={project.live}>{project.name}</Link>
+          <Heading fontSize="2xl" marginBottom={2} color="brand.500">
+            {project.live ? (
+              <Link href={project.live}>{project.name}</Link>
+            ) : (
+              <Text>{project.name}</Text>
+            )}
           </Heading>
-          <Text as='i' color='black'>
-            {project.description}
-          </Text>
+          <Text>{project.description}</Text>
           <BadgeStack stack={project.stack} github={project.github} />
         </CardBody>
       </Card>

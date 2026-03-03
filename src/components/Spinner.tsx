@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/react";
-import favicon from "../assets/favicon.svg";
+import favicon from "../assets/favicon_v2.svg";
 
 interface Props {
   id: string;
@@ -10,12 +10,12 @@ const Spinner = ({ id, position }: Props) => {
   const intId = parseInt(id);
   return (
     <Image
-      className='spinner'
+      className="spinner"
       id={`spinner${id}`}
       display={{ base: "none", lg: "block" }}
       src={favicon}
-      boxSize='6vw'
-      position='absolute'
+      boxSize="6vw"
+      position="absolute"
       top={position === "top" ? "18vh" : `76vh`}
       right={
         intId <= 4 ? `${(intId - 1) * 6 + 10}vw` : `${(intId - 5) * 6 + 10}vw`

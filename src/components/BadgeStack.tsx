@@ -7,34 +7,36 @@ interface Props {
 
 const RegularStack = ({ stack, github }: Props) => {
   return (
-    <HStack justifyContent='flex-end' paddingTop={5} overflow='wrap'>
+    <HStack justifyContent="flex-end" paddingTop={5} overflow="wrap">
       {stack.map((s) => (
         <Badge
           key={s}
-          bg='brand.400'
-          color='white'
-          variant='subtle'
+          bg="brand.400"
+          color="white"
+          variant="subtle"
           paddingX={2}
           paddingY={1}
-          borderRadius='4px'
-          fontSize='small'
+          borderRadius="4px"
+          fontSize="small"
         >
-          <Text>{s}</Text>
+          <Text fontFamily={`monospace`}>{s}</Text>
         </Badge>
       ))}
-      <Link href={github}>
-        <Badge
-          bg='brand.500'
-          color='white'
-          variant='subtle'
-          paddingX={2}
-          paddingY={1}
-          borderRadius='4px'
-          fontSize='small'
-        >
-          <Text>Code</Text>
-        </Badge>
-      </Link>
+      {github && (
+        <Link href={github}>
+          <Badge
+            bg="brand.500"
+            color="white"
+            variant="subtle"
+            paddingX={2}
+            paddingY={1}
+            borderRadius="4px"
+            fontSize="small"
+          >
+            <Text fontFamily={`monospace`}>Code</Text>
+          </Badge>
+        </Link>
+      )}
     </HStack>
   );
 };
@@ -46,50 +48,52 @@ const DynamicStack = ({ stack, github }: Props) => {
 
   return (
     <Stack>
-      <HStack justifyContent='flex-end' paddingTop={5}>
+      <HStack justifyContent="flex-end" paddingTop={5}>
         {stack.slice(0, 2).map((s) => (
           <Badge
             key={s}
-            bg='brand.400'
-            color='white'
-            variant='subtle'
+            bg="brand.400"
+            color="white"
+            variant="subtle"
             paddingX={2}
             paddingY={1}
-            borderRadius='4px'
-            fontSize='small'
+            borderRadius="4px"
+            fontSize="small"
           >
-            <Text>{s}</Text>
+            <Text fontFamily={`monospace`}>{s}</Text>
           </Badge>
         ))}
       </HStack>
-      <HStack justifyContent='flex-end'>
+      <HStack justifyContent="flex-end">
         {stack.slice(2).map((s) => (
           <Badge
             key={s}
-            bg='brand.400'
-            color='white'
-            variant='subtle'
+            bg="brand.400"
+            color="white"
+            variant="subtle"
             paddingX={2}
             paddingY={1}
-            borderRadius='4px'
-            fontSize='small'
+            borderRadius="4px"
+            fontSize="small"
           >
             <Text>{s}</Text>
           </Badge>
         ))}
-        <Link href={github}>
-          <Badge
-            bg='brand.500'
-            color='white'
-            variant='subtle'
-            paddingX={2}
-            paddingY={1}
-            borderRadius='4px'
-            fontSize='small'
-          >
-            <Text>Code</Text>
-          </Badge>
-        </Link>
+        {github && (
+          <Link href={github}>
+            <Badge
+              bg="brand.500"
+              color="white"
+              variant="subtle"
+              paddingX={2}
+              paddingY={1}
+              borderRadius="4px"
+              fontSize="small"
+            >
+              <Text fontFamily={`monospace`}>Code</Text>
+            </Badge>
+          </Link>
+        )}
       </HStack>
     </Stack>
   );

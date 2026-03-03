@@ -5,22 +5,26 @@ import SocialBar from "./components/SocialBar";
 import Introduction from "./components/Introduction";
 import HeadingTile from "./components/HeadingTile";
 import Spinner from "./components/Spinner";
+import Work_Study from "./components/Work_Study";
+import "@fontsource-variable/merriweather";
 
 function App() {
   return (
     <>
       <SocialBar />
       <Introduction />
-      <HeadingTile text='Personal Projects' />
+      <HeadingTile text="Work & Study" />
+      <Work_Study />
+      <HeadingTile text="Projects" />
       <ProjectGrid projects={projects} designs={designs} />
-      <Spinner id='1' position='top' />
-      <Spinner id='2' position='top' />
-      <Spinner id='3' position='top' />
-      <Spinner id='4' position='top' />
-      <Spinner id='5' position='bottom' />
-      <Spinner id='6' position='bottom' />
-      <Spinner id='7' position='bottom' />
-      <Spinner id='8' position='bottom' />
+      <Spinner id="1" position="top" />
+      <Spinner id="2" position="top" />
+      <Spinner id="3" position="top" />
+      <Spinner id="4" position="top" />
+      <Spinner id="5" position="bottom" />
+      <Spinner id="6" position="bottom" />
+      <Spinner id="7" position="bottom" />
+      <Spinner id="8" position="bottom" />
     </>
   );
 }
