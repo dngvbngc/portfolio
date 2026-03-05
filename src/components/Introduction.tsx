@@ -8,10 +8,11 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import profile from "../assets/styled_profile_v5.png";
+import background from "../assets/intro_bg_v2.png";
 
 const Introduction = () => {
   return (
-    <Box>
+    <Box bg={`url(${background})`} bgSize="cover" bgPosition="center">
       <SimpleGrid height="93vh" color="brand.400" columns={{ base: 1, lg: 2 }}>
         {/* For large screens */}
         <Center display={{ base: "none", lg: "flex" }} paddingLeft={100}>
@@ -38,13 +39,13 @@ const Introduction = () => {
             </Text>{" "}
             <VStack alignItems="flex-start" gap={2} marginTop={2}>
               <span>
-                <span style={{ marginRight: "10px" }}>&#x2615;</span> AI &
-                Software Development
+                <span style={{ marginRight: "10px" }}>📒</span> AI & Software
+                Developer
               </span>
 
               <span>
                 <span style={{ marginRight: "10px", marginTop: "2px" }}>
-                  &#9728;
+                  &#x2615;
                 </span>{" "}
                 Yale-NUS College, Class of 2025
               </span>

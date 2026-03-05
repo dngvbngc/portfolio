@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/react";
-import favicon from "../assets/favicon_v2.svg";
+import favicon from "../assets/favicon_v3.svg";
 
 interface Props {
   id: string;
