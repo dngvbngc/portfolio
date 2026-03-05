@@ -76,7 +76,7 @@ const DynamicStack = ({ stack, github }: Props) => {
             borderRadius="4px"
             fontSize="small"
           >
-            <Text>{s}</Text>
+            <Text fontFamily={`monospace`}>{s}</Text>
           </Badge>
         ))}
         {github && (
