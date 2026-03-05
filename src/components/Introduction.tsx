@@ -7,7 +7,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import profile from "../assets/styled_profile_v4.png";
+import profile from "../assets/styled_profile_v5.png";
 
 const Introduction = () => {
   return (
